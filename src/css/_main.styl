@@ -1,0 +1,767 @@
+.header
+    padding-bottom 39px
+    &__border
+        border-bottom 1px solid #ECF3FF
+        margin-bottom 30px
+        padding-top 10px
+        padding-bottom 10px
+    &__cube
+        display flex
+        justify-content space-between
+    &__sublink-margin
+        margin-right 30px
+        height 12px
+    &__icon
+        color $grey
+        transition color .3s
+    &__icon:not(:last-child)
+        margin-right 8px
+    &__one:hover
+        color #8E24AA
+    &__two:hover
+        color #4CAF50
+    &__three:hover
+        color #039BE5
+    &__sublink
+        font-size 12px
+        line-height 17px
+        color #5D6C7B
+        transition color .3s
+    &__sublink:hover
+        color $black
+    &__tel
+        margin-right 9px
+        font-size 12px
+        line-height 17px
+        font-weight 500
+    &__basket:hover
+        filter invert(100%)
+    &__div
+        justify-content space-between
+        margin-bottom 35px
+    &__logo
+        display block
+        margin-right 35px
+    &__dropdown
+        position relative
+        border none
+        border-radius 5px
+        margin-right 20px
+        padding 8px 18px
+        width 114px
+        font-size 16px
+        line-height 23px
+        font-weight 500
+        color $white
+        background $blue
+        transition background .3s
+        cursor pointer
+    &__dropdown:hover
+        background #8185F9
+
+    &__burger-menu
+        top 15px
+        right 13px
+
+    &__burger-menu::before,
+    &__burger-menu::after
+        content: "";
+        position: absolute;
+        left: 15px;
+        width: 13px;
+        height: 1px;
+        background-color $white
+    
+    &__burger-menu::after
+        top 15px
+
+    &__burger-line
+        position: absolute;
+        left: 15px;
+        top: 4px;
+        width: 13px;
+        height: 1px;
+        background-color: $white;
+
+
+    &__label
+        position relative
+    &__input
+        position relative
+        border 1.5px solid $blue
+        border-radius 5px
+        padding 10px
+        width 583px
+    &__input:focus
+        outline none
+    &__input::placeholder
+        font-size 14px
+        line-height 20px
+        color $grey
+    &__search
+        position absolute
+        padding 12px
+        top 0
+        border none
+        background $blue
+
+    &__subicon
+        border-radius 50%
+        padding 10px
+        transition background .3s
+    &__subicon:hover
+        background #F4F7FB
+    &__subicon:not(:last-child)
+        margin-right 21.6px
+    &__subicon:last-child
+        border-radius 100px
+        padding 10px 15px
+        background $light
+    &__subdiv
+        padding-top 10px
+        padding-bottom 10px
+        background $light
+    &__link-margin:not(:last-child)
+        margin-right 49.6px
+    &__link
+        font-size 14px
+        line-height 20px
+        font-weight 500
+    &__sale
+        border-radius 300px
+        margin-left 8px
+        padding 3px 5px
+        font-size 10px
+        line-height 14px
+        font-weight 500
+        background $blue
+        color $white
+
+.hero
+    border-radius 10px
+    padding-top 39px
+    padding-bottom 130px
+    color $white
+    background-image url("../img/hero__default-foto.png")
+    background-repeat no-repeat
+    &__div
+        border 1px solid $white
+        border-radius 5px
+        margin-bottom 36px
+        padding 2px 9px
+        max-width 74px
+        font-size 14px
+        line-height 20px
+    &__title
+        margin 0
+        margin-bottom 7px
+        max-width 615px
+        font-size 35px
+        line-height 51px
+        font-weight 600
+    &__text
+        margin 0
+        margin-bottom 25px
+        font-size 20px
+        line-height 29px
+    &__link
+        display inline-block
+        border none
+        border-radius 5px
+        padding 15px 25px
+        font-size 16px
+        line-height 23px
+        color $blue
+        background $white
+        cursor pointer
+
+.conditions
+    padding-top 30px
+    padding-bottom 37px
+    &__flex
+        display flex
+        justify-content space-between
+        align-items center
+    &__list
+        display flex
+        justify-content space-between
+    &__item:not(:last-child)
+        margin-right 100px
+    &__title
+        margin 0
+        font-size 25px
+        line-height 36px
+        font-weight 600
+    &__text
+        margin 0
+        font-size 16px
+        line-height 23px
+    &__btn
+        border 1px solid rgba(93, 108, 123, 0.1)
+        border-radius 5px
+        padding 10px
+    &__logo
+        border-radius 5px
+        margin-right 18px
+        padding 14px 18px
+        background #FC3F1D
+    &__subtitle
+        margin 0
+        font-size 12px
+        line-height 17px
+        color #5D6C7B
+    &__subtext
+        display flex
+        align-items center
+        margin 0
+        font-size 25px
+        line-height 36px
+        font-weight 600
+        svg
+            margin-right 5px
+
+.products
+    padding-top 37px
+    padding-bottom 55px
+    &__flex
+        display flex
+        justify-content space-between
+        align-items center
+        margin-bottom 50px
+    &__link
+        border 1.3px solid $blue
+        border-radius 5px
+        padding 10px 20px
+        font-size 12px
+        line-height 17px
+        color $blue
+    &__link:not(:last-child)
+        margin-right 10px
+    &__list
+        display grid
+        grid-template-columns repeat(12, 1fr)
+        grid-gap 30px
+        margin-bottom 50px
+    &__item
+        position relative
+        grid-column span 3
+        border 1.5px solid #EAEBED
+        border-radius 10px
+        flex-direction: column;
+        box-sizing: border-box;
+        height: auto;
+        picture img
+          border-top-left-radius 10px
+          border-top-right-radius 10px
+    &__sale,
+    &__new
+        position absolute
+        top 8.5px
+        left 8.5px
+        border-radius 5px
+        padding 4px 9px
+        font-size 12px
+        line-height 17px
+        font-weight 500
+        color $white
+        background $red
+    &__new
+        background #75D14A
+    &__balance
+        position absolute
+        top 8.5px
+        right 8.5px
+        border-radius 50%
+        width 35px
+        height 35px
+        padding 8px
+        background rgba(255, 255, 255, 0.2)
+    &__cube
+        position relative
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items flex-start
+        min-height 220
+        padding 24px
+    &__subtitle
+        margin 0
+        margin-bottom 20px
+        font-size 18px
+        line-height 26px
+        font-weight 600
+    &__flex
+        column-count 2
+        height 52px
+    &__elem
+        font-family 'Roboto'
+        font-size 14px
+        line-height 16px
+        color #5D6C7B
+    &__old-price
+        margin 0
+        font-size 12px
+        line-height 17px
+        text-decoration-line line-through
+        font-weight 500
+        color #5D6C7B
+    &__new-price
+        margin 0
+        margin-bottom 16px
+        font-size 20px
+        line-height 29px
+        font-weight 600
+    &__icon
+        border 1.3px solid #EAEBED
+        border-radius 50%
+        padding 9px
+        width 40px
+        height 40px
+    &__btn
+        border-radius 5px
+        margin-top auto
+        text-align center
+        padding-top 10px
+        padding-bottom 10px
+        width 100%
+        font-size: 12px
+        line-height: 17px
+        color: $white
+        background $blue
+
+.services
+    padding-top 55px
+    padding-bottom 55px
+    &__list
+        display grid
+        grid-template-columns repeat(12, 1fr)
+        grid-gap 30px
+    &__item
+        grid-column span 6
+        border-radius 10px
+        flex-direction: column;
+        box-sizing: border-box;
+        height: auto;
+        padding 32px 40px
+        background $light
+        background-repeat no-repeat
+    &__photo-1
+        background-image url("../img/services__default-foto-1.png")
+    &__photo-2
+        background-image url("../img/services__default-foto-2.png")
+    &__cube
+        position relative
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items flex-start
+        min-height 170
+    &__title
+        margin 0
+        margin-bottom 10px
+        max-width 258px
+        font-size 25px
+        line-height 36px
+        font-weight 600
+    &__text
+        margin 0
+        margin-bottom 22px
+        max-width 258px
+        font-size 16px
+        line-height 23px
+    &__link
+        display flex
+        align-items center
+        margin-top: auto;
+        font-size 14px
+        line-height 20px
+        font-weight 500
+        color $blue
+        svg
+          margin-left 8px
+          transition margin .3s
+    &__link:hover svg
+        margin-left 16px
+
+.banner
+    border-radius 10px
+    color $white
+    background radial-gradient(76.7% 707.77% at 23.3% 72.57%, #595959 0%, #3B3E46 100%)
+    &__list
+        display grid
+        grid-template-columns repeat(12, 1fr)
+        grid-gap 30px
+    &__list::before
+        content ""
+        grid-column span 7
+        background-image url("../img/banner__default-foto.png")
+        background-repeat no-repeat
+    &__item
+        grid-column span 5
+        padding-top 67px
+        padding-bottom 67px
+    &__div
+        border-radius 5px
+        margin-bottom 27px
+        padding 3px 12px
+        max-width: 62px
+        font-size 14px
+        line-height 20px
+        background $red
+    &__title
+        margin 0
+        margin-bottom 27px
+        font-size 35px;
+        line-height 51px
+        font-weight 600
+    &__link
+        border-radius 5px
+        padding 15px 25px
+        font-size 16px
+        line-height 23px
+        color $black
+        background $white
+
+.categories
+    padding-top 100px
+    padding-bottom 100px
+    &__title
+        justify-content space-between
+        margin-bottom 68px
+    &__div
+        border-radius 5px
+        padding 10px
+        background #F4F7FB
+        picture
+            border-radius 5px
+            margin-right 19px
+            background #F3A712
+            img
+                border-radius 5px
+    &__subtext
+        margin 0
+        margin-bottom 6px
+        max-width 178px
+        font-size 12px
+        line-height 17px
+        font-weight 500
+    &__link
+        font-size 12px
+        line-height 17px
+        font-weight 500
+        color $blue
+    &__list
+        display grid
+        grid-template-columns repeat(12, 1fr)
+        grid-gap 30px
+        margin-bottom 50px
+    &__item
+        grid-column span 3
+        display flex
+        justify-content center
+        position relative
+        background #F4F7FB
+        picture img
+            border-radius 10px
+    &__cube
+        position absolute
+        bottom 10px
+        border-radius 10px
+        padding 10px 16px
+        max-width 233px
+        font-weight 500
+        color: $white
+        background rgba(0, 0, 0, 0.2)
+        backdrop-filter blur(5px)
+    &__text
+        margin 0
+        margin 2px
+        font-size 18px
+        line-height 26px
+    &__price
+        margin 0
+        font-size 14px
+        line-height 20px
+
+.about
+    border-radius 10px
+    padding 29px 28px
+    background $light
+    filter drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    &__cube
+        position absolute
+        right 20px
+        bottom 20px
+        border-radius 10px
+        padding 17px 21px
+        color $white
+    &__new-title
+        margin 0
+        font-size 18px
+        line-height 26px
+        font-weight 500
+    &__btn
+        border-radius 10px
+        padding 11px 22px
+        font-size 14px
+        line-height 20px
+        font-weight 500
+        background $blue
+        cursor pointer
+    &__list
+        display grid
+        grid-template-columns repeat(12, 1fr)
+        grid-gap 70px
+    &__list::before
+        position relative
+        content ""
+        grid-column span 6
+        height 565px
+        border-radius 10px
+        background #F4F7FB
+        background-image url("../img/about__default-foto.png")
+        background-repeat no-repeat
+    &__item
+        grid-column span 6
+        padding-top 28px
+    &__title
+        margin-bottom 18px
+        text-align left
+    &__text
+        margin-bottom 40px
+        max-width 540px
+    &__div
+        border-radius 10px
+        padding 20px 23px
+        background $white
+    &__subtitle
+        margin 0
+        margin-bottom 13px
+        font-size 14px
+        line-height 20px
+        font-weight 500
+    &__container
+        margin-bottom 13px
+        font-size 14px
+        line-height 20px
+    &__link
+        font-size 12px
+        line-height 17px
+        font-weight 500
+        color $blue
+
+.price
+    padding-top 100px
+    padding-bottom 50px
+    text-align center
+    &__title
+        margin-bottom 18px
+    &__text
+        margin 0
+        margin-bottom 50px
+        font-size 16px
+        line-height 23px
+    &__div
+        display flex
+        justify-content center
+        margin-bottom 58px
+    &__link
+        border 1.3px solid $blue
+        border-radius 5px
+        padding 15px 25px
+        font-size 16px
+        line-height 23px
+        color: $blue
+    &__link:not(:last-child)
+        margin-right 20px
+    &__last-link
+        border-radius 5px
+        padding 15px 25px
+        font-size 16px
+        line-height 23px
+        color #5D6C7B
+        background #F4F7FB
+    &__list
+        display grid
+        grid-template-columns repeat(12, 1fr)
+        grid-gap 30px
+        margin-bottom 100px
+    &__item
+        grid-column span 4
+        border 1px solid #EAEBED
+        border-radius 10px
+        flex-direction column
+        box-sizing border-box
+        height auto
+        padding 26px 20px
+        padding-right 27px
+        text-align left
+        svg
+            margin-bottom 20px
+    &__item:last-child
+        border none
+        padding-top 68px
+        background #F4F7FB
+        background-image url("../img/price__default-foto.png")
+        background-repeat no-repeat
+    &__cube
+        position relative
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items flex-start
+        min-height 126px
+    &__subtitle
+        margin 0
+        margin-bottom 8px
+        max-width 289px
+        font-size 18px
+        line-height 26px
+        font-weight 500
+    &__subtext
+        margin 0
+        max-width 289px
+        font-size 14px
+        line-height 18px
+    &__sublink
+        font-size 14px
+        line-height 18px
+        color $blue
+    &__new-link
+        display flex
+        align-items center
+        height 9px
+        font-size 14px
+        line-height 20px
+        font-weight 500
+        color $blue
+        transition margin .3s
+        svg
+            margin-left 8px
+    &__new-link:hover svg
+        margin-right 16px
+    &__video
+        border-radius 10px
+        padding-top 247px
+        padding-bottom 247px
+        height 630px
+        background-image url("../img/video__default-foto.png")
+        background-repeat no-repeat
+    &__btn
+        position absolute
+        border-radius 50%
+        background $white
+
+.photo
+    padding-top 50px
+    padding-bottom 50px
+    text-align center
+    &__title
+        margin-bottom 17px
+    &__link
+        margin-bottom 57px
+        font-size 14px
+        line-height 20px
+        font-weight 500
+        color $blue
+
+.videos
+    padding-top 50px
+    padding-bottom 50px
+    &__flex
+        display flex
+        justify-content space-between
+        align-items center
+    &__title
+        margin-bottom 17px
+    &__text
+        margin 0
+        max-width 405px
+        font-size 14px
+        line-height 20px
+        color $grey
+
+.new
+    padding-top 50px
+    padding-bottom 50px
+    &__title
+        margin-bottom 60px
+
+
+
+
+
+
+
+.footer
+    &__subdiv
+        padding-top 24px
+        padding-bottom 21px
+        background $blue
+    &__cube
+        justify-content space-between
+    &__title
+        margin 0
+        max-width 445px
+        font-size 18px
+        line-height 26px
+        font-weight 600
+        color $white
+    &__input
+        border none
+        border-radius 5px
+        margin-right 20px
+        padding 15px 25px
+        width 410px
+        height 53px
+        color $white
+        background rgba(255, 255, 255, 0.2)
+    &__input::placeholder
+        font-size 16px
+        line-height 23px
+        color $white
+    &__input:focus
+        outline none
+    &__btn
+        border none
+        border-radius 5px
+        padding 15px 25px
+        font-size 16px
+        line-height 23px
+        color $blue
+        background $white
+        cursor pointer
+    &__div
+        padding-top 46px
+        background $light
+    &__div-link
+        border-bottom: 1px solid #5D6C7B
+        padding-top 46px
+        padding-bottom 50px
+    &__div-margin
+        margin-right 125px
+    &__subtitle
+        margin 0
+        margin-bottom 17px
+        font-size 18px
+        line-height 26px
+        font-weight 500
+    &__margin-link:not(:last-child)
+        margin-bottom 10px
+    &__link
+        font-size 14px
+        line-height 20px
+        color $grey
+    &__div-icons
+        border-bottom: 1px solid $grey
+        padding-top 36px
+        padding-bottom 34px
+    &__pay
+        justify-content space-between
+    &__sublink
+        font-size 12px
+        line-height 17px
+    &__sublink:not(:last-child)
+        margin-right 44px
+    &__pay-system:not(:last-child)
+        margin-right 5px
